@@ -134,8 +134,5 @@ namespace Stripe
         /// </summary>
         [JsonProperty("subscriptions")]
         public StripeList<StripeSubscription> Subscriptions { get; set; }
-
-		[JsonProperty("pay_immediately")]
-		public bool PayImmediately { get; set; }
     }
 }

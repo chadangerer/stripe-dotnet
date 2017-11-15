@@ -46,9 +46,12 @@ namespace Stripe
         [JsonProperty("validate")]
         public bool? Validate { get; set; }
 
-        #region Trial End
+	    [JsonProperty("pay_immediately")]
+	    public bool PayImmediately { get; set; }
 
-        public DateTime? TrialEnd { get; set; }
+		#region Trial End
+
+		public DateTime? TrialEnd { get; set; }
 
         public bool EndTrialNow { get; set; }
 
